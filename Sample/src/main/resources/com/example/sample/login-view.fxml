@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sample.LoginView">
+   <children>
+      <ImageView fitHeight="229.0" fitWidth="363.0" layoutX="7.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/360_F_339709048_ZITR4wrVsOXCKdjHncdtabSNWpIhiaR7.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="376.0" layoutY="125.0" text="User Name" />
+      <TextField fx:id="username" layoutX="376.0" layoutY="142.0" promptText="username" />
+      <Label layoutX="376.0" layoutY="183.0" text="Password" />
+      <Button fx:id="btnLogin" layoutX="380.0" layoutY="245.0" mnemonicParsing="false" onAction="#loginButtonAction" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #0394fc;" text="Login" textFill="WHITE" />
+      <Label fx:id="invalidLoginErr" alignment="CENTER" layoutX="351.0" layoutY="108.0" prefHeight="17.0" prefWidth="212.0" text="Username or Password Invalid !" textFill="RED" />
+      <Button fx:id="btnCancel" layoutX="482.0" layoutY="245.0" mnemonicParsing="false" onAction="#cancelButtonAction" prefHeight="39.0" prefWidth="86.0" style="-fx-background-color: #eb413b;" text="Cancel" textFill="WHITE" />
+      <PasswordField fx:id="password" layoutX="376.0" layoutY="201.0" promptText="password" />
+   </children>
+</Pane>
